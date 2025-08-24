@@ -364,8 +364,8 @@ async def shutdown_event():
 
 if __name__ == "__main__":
     print("🚀 Startar Enkel Dashboard...")
-    print("🌐 Öppna: http://127.0.0.1:8000")
+    print("🌐 Öppna: http://127.0.0.1:3000")
     print("📊 Dashboard med live statistik och auto-refresh")
     print("🎯 En fil, enkel att använda, bara fungerar!")
 
-    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="info")
+    uvicorn.run(app, host="0.0.0.0", port=3000, log_level="info")
