@@ -1,0 +1,2476 @@
+{
+  "export_info": {
+    "timestamp": "2025-08-24T03:06:45.281320",
+    "scraper_version": "Ultimate Magnificent Scraper 3.0",
+    "total_results": 31,
+    "export_format": "JSON"
+  },
+  "scraper_stats": {
+    "total_requests": 16,
+    "successful_requests": 15,
+    "failed_requests": 1,
+    "total_data_size": 4757317,
+    "ai_analyses": 15,
+    "quality_scores": [
+      0.361298947368421,
+      0.32770750000000004,
+      0.1,
+      0.1,
+      0.4047009449760766,
+      0.5719701434062685,
+      0.26942,
+      0.7412027575293934,
+      0.361298947368421,
+      0.33448375,
+      0.4047009449760766,
+      0.5361903414875566,
+      0.26942,
+      0.1,
+      0.45132
+    ],
+    "average_response_time": 2.1453652381896973,
+    "average_quality": 0.3555809518074809
+  },
+  "scraped_data": [
+    {
+      "url": "https://tiktok.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 271058,
+        "encoding": "utf-8",
+        "server": "nginx",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [
+            "Make Your"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.45132,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 1.0,
+        "engagement_potential": 0.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 73,
+          "external_links": 73,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 0,
+          "script_count": 78,
+          "css_count": 0,
+          "inline_styles": 3,
+          "external_resources": 73
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 73,
+        "external_links": 73,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 1.7313778400421143,
+        "data_size": 271058,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.45132,
+      "timestamp": "2025-08-24 01:05:32"
+    },
+    {
+      "url": "https://linkedin.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 136417,
+        "encoding": "utf-8",
+        "server": "cloudflare",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Ekonomi",
+            "confidence": 0.5,
+            "keyword_matches": 3
+          },
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Utbildning",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Database Management",
+            "Project Management",
+            "Finans Administrativ",
+            "Crossclimb Tango",
+            "Medlemmar Jobb",
+            "Business Analysis",
+            "Motion Graphics",
+            "System Administration",
+            "Artiklar Skolor",
+            "Help Desk"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5361903414875566,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.19437475961538467,
+        "engagement_potential": 0.76,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 2,
+          "external_links": 217,
+          "form_security": 2
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 7,
+          "script_count": 6,
+          "css_count": 1,
+          "inline_styles": 14,
+          "external_resources": 3
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 2,
+        "external_links": 217,
+        "form_security": 2
+      },
+      "performance_metrics": {
+        "response_time": 2.3604371547698975,
+        "data_size": 136417,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5361903414875566,
+      "timestamp": "2025-08-24 01:05:30"
+    },
+    {
+      "url": "https://youtube.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 713079,
+        "encoding": "utf-8",
+        "server": "ESF",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.26942,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 9,
+          "external_links": 21,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 0,
+          "script_count": 42,
+          "css_count": 5,
+          "inline_styles": 42,
+          "external_resources": 10
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 9,
+        "external_links": 21,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.2088465690612793,
+        "data_size": 713079,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.26942,
+      "timestamp": "2025-08-24 01:05:30"
+    },
+    {
+      "url": "https://instagram.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=\"utf-8\"",
+        "content_length": 408367,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.1,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 45,
+          "external_links": 95,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 77,
+          "css_count": 1,
+          "inline_styles": 3,
+          "external_resources": 9
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 45,
+        "external_links": 95,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.573596954345703,
+        "data_size": 408367,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.1,
+      "timestamp": "2025-08-24 01:05:30"
+    },
+    {
+      "url": "https://twitter.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 276124,
+        "encoding": "utf-8",
+        "server": "cloudflare tsa_b",
+        "last_modified": "Sun, 24 Aug 2025 01:05:32 GMT"
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Utgivaruppgifter Annonsinfo",
+            "Help Center",
+            "Integritetspolicy Cookie"
+          ],
+          "organisationer": [
+            "X Corp"
+          ],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "english",
+        "quality_score": 0.4047009449760766,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.43980167464114855,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 40,
+          "external_links": 48,
+          "form_security": 0
+        },
+        "accessibility_score": 0.5,
+        "performance_metrics": {
+          "image_count": 1,
+          "script_count": 47,
+          "css_count": 0,
+          "inline_styles": 5,
+          "external_resources": 41
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 40,
+        "external_links": 48,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.5785791873931885,
+        "data_size": 276124,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.4047009449760766,
+      "timestamp": "2025-08-24 01:05:28"
+    },
+    {
+      "url": "https://facebook.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=\"utf-8\"",
+        "content_length": 163445,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.361298947368421,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.11,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 1,
+          "external_links": 63,
+          "form_security": 0
+        },
+        "accessibility_score": 0.7000000000000001,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 18,
+          "css_count": 5,
+          "inline_styles": 2,
+          "external_resources": 3
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 1,
+        "external_links": 63,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.315812826156616,
+        "data_size": 163445,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.361298947368421,
+      "timestamp": "2025-08-24 01:05:27"
+    },
+    {
+      "url": "https://snapchat.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 69583,
+        "encoding": "utf-8",
+        "server": "API Gateway",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [
+            "Mer Snapchat",
+            "Snap Inc"
+          ],
+          "organisationer": [
+            "Snap Inc"
+          ],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.33448375,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.5201750000000002,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 12,
+          "external_links": 53,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 0,
+          "script_count": 13,
+          "css_count": 2,
+          "inline_styles": 0,
+          "external_resources": 12
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 12,
+        "external_links": 53,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.3327548503875732,
+        "data_size": 69583,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.33448375,
+      "timestamp": "2025-08-24 01:05:27"
+    },
+    {
+      "url": "https://dn.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 510767,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Science Photo",
+            "Hanna Klinthage",
+            "Katrina Marcinowski",
+            "Wanda Bendjelloul",
+            "Dryck Foto",
+            "Michael Brochstein",
+            "Alex Brandon",
+            "Joakim Medin",
+            "Stockholm Tipsa",
+            "Johan Mohamed"
+          ],
+          "organisationer": [],
+          "platser": [
+            "Sandberg",
+            "Tyskland",
+            "Gotland",
+            "Ryssland"
+          ],
+          "datum": [],
+          "email": [
+            "www@dn.se",
+            "kundservice@dn.se"
+          ],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.7412027575293934,
+        "spam_probability": 0.6000000000000001,
+        "content_type": "application",
+        "readability": 0.5646758297312866,
+        "engagement_potential": 1.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 8,
+          "external_links": 61,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 104,
+          "script_count": 17,
+          "css_count": 1,
+          "inline_styles": 110,
+          "external_resources": 113
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 8,
+        "external_links": 61,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 1.9641306400299072,
+        "data_size": 510767,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.7412027575293934,
+      "timestamp": "2025-08-24 01:05:11"
+    },
+    {
+      "url": "https://youtube.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 712265,
+        "encoding": "utf-8",
+        "server": "ESF",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.26942,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 9,
+          "external_links": 21,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 0,
+          "script_count": 42,
+          "css_count": 5,
+          "inline_styles": 42,
+          "external_resources": 10
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 9,
+        "external_links": 21,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.0106191635131836,
+        "data_size": 712265,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.26942,
+      "timestamp": "2025-08-24 01:05:10"
+    },
+    {
+      "url": "https://twitter.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 276124,
+        "encoding": "utf-8",
+        "server": "cloudflare tsa_b",
+        "last_modified": "Sun, 24 Aug 2025 01:05:13 GMT"
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Utgivaruppgifter Annonsinfo",
+            "Help Center",
+            "Integritetspolicy Cookie"
+          ],
+          "organisationer": [
+            "X Corp"
+          ],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "english",
+        "quality_score": 0.4047009449760766,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.43980167464114855,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 40,
+          "external_links": 48,
+          "form_security": 0
+        },
+        "accessibility_score": 0.5,
+        "performance_metrics": {
+          "image_count": 1,
+          "script_count": 47,
+          "css_count": 0,
+          "inline_styles": 5,
+          "external_resources": 41
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 40,
+        "external_links": 48,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.309091329574585,
+        "data_size": 276124,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.4047009449760766,
+      "timestamp": "2025-08-24 01:05:09"
+    },
+    {
+      "url": "https://svt.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 222568,
+        "encoding": "ISO-8859-1",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Donald Trump",
+            "Tel Aviv",
+            "Julia Henriksson",
+            "Kan Netanyahu",
+            "Play Tordyveln",
+            "Karen Pirie",
+            "Har Israel",
+            "Europe Smash",
+            "Northvolt Experternas",
+            "Strider Hamas"
+          ],
+          "organisationer": [],
+          "platser": [
+            "Gotland"
+          ],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5719701434062685,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.09731877587226506,
+        "engagement_potential": 1.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 2,
+          "external_links": 35,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 166,
+          "script_count": 4,
+          "css_count": 1,
+          "inline_styles": 16,
+          "external_resources": 91
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 2,
+        "external_links": 35,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.0295395851135254,
+        "data_size": 222568,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5719701434062685,
+      "timestamp": "2025-08-24 01:05:09"
+    },
+    {
+      "url": "https://facebook.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=\"utf-8\"",
+        "content_length": 163453,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.361298947368421,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.11,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 1,
+          "external_links": 63,
+          "form_security": 0
+        },
+        "accessibility_score": 0.7000000000000001,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 18,
+          "css_count": 5,
+          "inline_styles": 2,
+          "external_resources": 3
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 1,
+        "external_links": 63,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.362776041030884,
+        "data_size": 163453,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.361298947368421,
+      "timestamp": "2025-08-24 01:05:07"
+    },
+    {
+      "url": "https://google.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=ISO-8859-1",
+        "content_length": 17704,
+        "encoding": "ISO-8859-1",
+        "server": "gws",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Nyheter Gmail",
+            "Drive Mer",
+            "Bilder Maps"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.32770750000000004,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.11355000000000018,
+        "engagement_potential": 0.01,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 0,
+          "external_links": 12,
+          "form_security": 0
+        },
+        "accessibility_score": 0.2,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 7,
+          "css_count": 0,
+          "inline_styles": 11,
+          "external_resources": 0
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 0,
+        "external_links": 12,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.1931159496307373,
+        "data_size": 17704,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.32770750000000004,
+      "timestamp": "2025-08-24 01:05:07"
+    },
+    {
+      "url": "https://instagram.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=\"utf-8\"",
+        "content_length": 408113,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.1,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 45,
+          "external_links": 95,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 77,
+          "css_count": 1,
+          "inline_styles": 3,
+          "external_resources": 9
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 45,
+        "external_links": 95,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 2.689192533493042,
+        "data_size": 408113,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.1,
+      "timestamp": "2025-08-24 01:05:07"
+    },
+    {
+      "url": "https://instagram.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=\"utf-8\"",
+        "content_length": 408250,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.1,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 45,
+          "external_links": 95,
+          "form_security": 0
+        },
+        "accessibility_score": 0.0,
+        "performance_metrics": {
+          "image_count": 2,
+          "script_count": 77,
+          "css_count": 1,
+          "inline_styles": 3,
+          "external_resources": 9
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 45,
+        "external_links": 95,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.5206079483032227,
+        "data_size": 408250,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.1,
+      "timestamp": "2025-08-24 01:05:07"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204205,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.17114830017089844,
+        "data_size": 204205,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:55:04"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204205,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.17612910270690918,
+        "data_size": 204205,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:55:01"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204205,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.17905712127685547,
+        "data_size": 204205,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:54:58"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204205,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.15800809860229492,
+        "data_size": 204205,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:54:52"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204327,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.16771769523620605,
+        "data_size": 204327,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:54:44"
+    },
+    {
+      "url": "https://blocket.se/elektronik",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 1430957,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Apple Watch",
+            "Nintendo Switch",
+            "Kart World",
+            "Kart Wii",
+            "Space Black",
+            "Osmo Action",
+            "Intel Xeon",
+            "Abbey Road",
+            "Pro Max",
+            "Elite Dragonfly"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5959389358108109,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.34591790540540573,
+        "engagement_potential": 1.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 34,
+          "external_links": 27,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 43,
+          "script_count": 36,
+          "css_count": 0,
+          "inline_styles": 79,
+          "external_resources": 74
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 34,
+        "external_links": 27,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.6307320594787598,
+        "data_size": 1430957,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5959389358108109,
+      "timestamp": "2025-08-24 00:54:14"
+    },
+    {
+      "url": "https://blocket.se/bilar",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 204205,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Opel Frontera"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.46976795454545456,
+        "spam_probability": 0.2,
+        "content_type": "application",
+        "readability": 0.1784827272727273,
+        "engagement_potential": 0.53,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 38,
+          "external_links": 136,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 3,
+          "script_count": 39,
+          "css_count": 4,
+          "inline_styles": 36,
+          "external_resources": 37
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 38,
+        "external_links": 136,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.16580748558044434,
+        "data_size": 204205,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.46976795454545456,
+      "timestamp": "2025-08-24 00:53:56"
+    },
+    {
+      "url": "https://www.blocket.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 980956,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5209593798916315,
+        "spam_probability": 0.4,
+        "content_type": "application",
+        "readability": 0.44151487055990374,
+        "engagement_potential": 0.51,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 26,
+          "external_links": 38,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 13,
+          "script_count": 28,
+          "css_count": 0,
+          "inline_styles": 29,
+          "external_resources": 36
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 26,
+        "external_links": 38,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.9013876914978027,
+        "data_size": 980956,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5209593798916315,
+      "timestamp": "2025-08-24 00:46:06"
+    },
+    {
+      "url": "https://www.blocket.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 980956,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5209593798916315,
+        "spam_probability": 0.4,
+        "content_type": "application",
+        "readability": 0.44151487055990374,
+        "engagement_potential": 0.51,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 26,
+          "external_links": 38,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 13,
+          "script_count": 28,
+          "css_count": 0,
+          "inline_styles": 29,
+          "external_resources": 36
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 26,
+        "external_links": 38,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.9543759822845459,
+        "data_size": 980956,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5209593798916315,
+      "timestamp": "2025-08-24 00:41:19"
+    },
+    {
+      "url": "https://www.ikea.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 191386,
+        "encoding": "utf-8",
+        "server": "cloudflare",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Ekonomi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Utbildning",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Sarah Fager",
+            "Innovation Ventures",
+            "Henrik Preutz",
+            "Global Welcome",
+            "Ebba Strandmark",
+            "Ola Wihlborg",
+            "Paulin Machado",
+            "Yearbook What",
+            "Wiebke Braasch"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": [
+            "https://www.ikea.pr/puertorico/es/https://www.ikea.pr/puertorico/en/https://www.ikea.com/ae/ar/https://www.ikea.com/ae/en/https://www.ikea.com.hk/zhhttps://www.ikea.com.hk/enhttps://www.ikea.com.do/es/https://www.ikea.com.do/en/https://www.ikea.com/ca/en/https://www.ikea.com/ca/fr/https://www.ikea.com/ma/fr/https://www.ikea.com/ma/ar/https://www.ikea.com/ma/en/https://www.ikea.com/pl/pl/https://www.ikea.com/jo/ar/https://www.ikea.com/jo/en/https://www.ikea.com/cz/cs/https://www.ikea.com/cz/en/https://www.ikea.com/th/th/https://www.ikea.com/th/en/https://www.ikea.com/gb/en/https://www.ikea.com/ch/de/https://www.ikea.com/ch/fr/https://www.ikea.com/ch/it/https://www.ikea.com/ch/en/https://www.ikea.com/rs/sr/https://www.ikea.com/be/nl/https://www.ikea.com/be/fr/https://www.ikea.com/be/en/https://www.ikea.com/bh/en/https://www.ikea.com/bh/ar/https://www.ikea.com/hu/hu/https://www.ikea.gr/https://www.ikea.gr/en/https://www.ikea.co.id/inhttps://www.ikea.co.id/enhttps://www.ikea.com/eg/ar/https://www.ikea.com/eg/en/https://www.ikea.com/us/en/https://www.ikea.com/us/es/https://www.ikea.com/sk/sk/https://www.ikea.com/se/sv/https://www.ikea.com/se/en/https://www.ikea.com/sg/en/https://www.ikea.com/ph/en/https://www.ikea.com/pt/pt/https://www.ikea.com/pt/en/https://www.ikea.com/dk/da/https://www.ikea.is/ishttps://www.ikea.bg/https://www.ikea.com.tr/https://www.ikea.com.tr/en/https://www.ikea.lt/lt/https://www.ikea.lt/ru/https://www.ikea.lt/en/https://www.ikea.com/jp/ja/https://www.ikea.com/jp/en/https://www.ikea.com.cy/https://www.ikea.com.cy/en/https://www.ikea.com/nz/en/https://www.ikea.com/au/en/https://www.ikea.cn/cn/zh/https://www.ikea.cn/cn/en/https://www.ikea.com/sa/ar/https://www.ikea.com/sa/en/https://www.ikea.com/kw/ar/https://www.ikea.com/kw/en/https://www.ikea.com/kr/ko/https://www.ikea.com/kr/en/https://www.ikea.com/fi/fi/https://www.ikea.com/fi/en/https://www.ikea.es/https://baleares.ikea.es/https://www.ikea.com/hr/hr/https://www.ikea.com/global/en/international-sales/https://www.ikea.com/no/no/https://www.ikea.com/no/en/https://www.ikea.com/qa/en/https://www.ikea.com/qa/ar/https://www.ikea.com/il/he/https://www.ikea.com/om/ar/https://www.ikea.com/om/en/https://www.ikea.com/de/de/https://www.ikea.com/de/en/https://www.ikea.ee/et/https://www.ikea.ee/ru/https://www.ikea.ee/en/https://www.ikea.lv/lv/https://www.ikea.lv/ru/https://www.ikea.lv/en/https://www.ikea.com/si/sl/https://www.ikea.com/my/ms/https://www.ikea.com/my/en/https://www.ikea.com.tw/zhhttps://www.ikea.com.tw/enhttps://canarias.ikea.es/https://www.ikea.com/ro/ro/https://www.ikea.com/ie/en/https://www.ikea.com/it/it/https://www.ikea.com/fr/fr/https://www.ikea.com/at/de/https://www.ikea.com/at/en/https://www.ikea.com/ua/uk/https://www.ikea.com/mx/es/https://www.ikea.com/mx/en/https://www.ikea.com/in/en/https://www.ikea.com/nl/nl/https://www.ikea.com/nl/en/https://www.ikea.com/cl/es/https://www.ikea.com/co/es/"
+          ]
+        },
+        "language": "english",
+        "quality_score": 0.4954182832618026,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 1.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 11,
+          "external_links": 274,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 26,
+          "script_count": 12,
+          "css_count": 9,
+          "inline_styles": 112,
+          "external_resources": 28
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 11,
+        "external_links": 274,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.8172495365142822,
+        "data_size": 191386,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.4954182832618026,
+      "timestamp": "2025-08-24 00:40:43"
+    },
+    {
+      "url": "https://www.github.com",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 553795,
+        "encoding": "utf-8",
+        "server": "github.com",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.5,
+            "keyword_matches": 3
+          },
+          {
+            "name": "Ekonomi",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          },
+          {
+            "name": "Nyheter",
+            "confidence": 0.3333333333333333,
+            "keyword_matches": 2
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Copilot Autofix",
+            "Magic Quadrant",
+            "Copilot Chat",
+            "Copilot You",
+            "Copilot Extensions"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "english",
+        "quality_score": 0.5941811202635914,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.24,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 58,
+          "external_links": 114,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 24,
+          "script_count": 62,
+          "css_count": 29,
+          "inline_styles": 66,
+          "external_resources": 61
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 58,
+        "external_links": 114,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 1.7109453678131104,
+        "data_size": 553795,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5941811202635914,
+      "timestamp": "2025-08-24 00:35:37"
+    },
+    {
+      "url": "https://www.svt.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 232349,
+        "encoding": "ISO-8859-1",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          },
+          {
+            "name": "Sport",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Play Tordyveln",
+            "Julia Henriksson",
+            "Tel Aviv",
+            "Strider Hamas",
+            "Premier League",
+            "Europe Smash",
+            "Har Israel",
+            "Piloten Carl",
+            "Karen Pirie",
+            "Donald Trump"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5983560968137256,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.20158615196078472,
+        "engagement_potential": 1.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 2,
+          "external_links": 35,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 174,
+          "script_count": 4,
+          "css_count": 1,
+          "inline_styles": 16,
+          "external_resources": 95
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 2,
+        "external_links": 35,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.7963216304779053,
+        "data_size": 232349,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5983560968137256,
+      "timestamp": "2025-08-24 00:35:15"
+    },
+    {
+      "url": "https://www.blocket.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 980956,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5209593798916315,
+        "spam_probability": 0.4,
+        "content_type": "application",
+        "readability": 0.44151487055990374,
+        "engagement_potential": 0.51,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 26,
+          "external_links": 38,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 13,
+          "script_count": 28,
+          "css_count": 0,
+          "inline_styles": 29,
+          "external_resources": 36
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 26,
+        "external_links": 38,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.1615922451019287,
+        "data_size": 980956,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5209593798916315,
+      "timestamp": "2025-08-24 00:33:51"
+    },
+    {
+      "url": "https://www.blocket.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 980956,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5209593798916315,
+        "spam_probability": 0.4,
+        "content_type": "application",
+        "readability": 0.44151487055990374,
+        "engagement_potential": 0.51,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 26,
+          "external_links": 38,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 13,
+          "script_count": 28,
+          "css_count": 0,
+          "inline_styles": 29,
+          "external_resources": 36
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 26,
+        "external_links": 38,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.13728117942810059,
+        "data_size": 980956,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5209593798916315,
+      "timestamp": "2025-08-24 00:31:58"
+    },
+    {
+      "url": "https://wikipedia.org",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 91825,
+        "encoding": "ISO-8859-1",
+        "server": "ATS/9.2.11",
+        "last_modified": "Mon, 18 Aug 2025 15:37:38 GMT"
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [
+          {
+            "name": "Teknologi",
+            "confidence": 0.16666666666666666,
+            "keyword_matches": 1
+          }
+        ],
+        "entities": {
+          "personer": [
+            "Sinugboanong Binisaya",
+            "Indonesia Italiano",
+            "Ladin Latina",
+            "Deutsch Eesti",
+            "Cymraeg Dansk",
+            "Wikipedia Wikipedia",
+            "Hrvatski Bahasa",
+            "Bahasa Melayu",
+            "Simple English",
+            "The Free"
+          ],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "unknown",
+        "quality_score": 0.3517388679245283,
+        "spam_probability": 0.0,
+        "content_type": "application",
+        "readability": 0.0,
+        "engagement_potential": 0.0,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 2,
+          "external_links": 9,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 1,
+          "script_count": 4,
+          "css_count": 0,
+          "inline_styles": 0,
+          "external_resources": 0
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 2,
+        "external_links": 9,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 1.6751751899719238,
+        "data_size": 91825,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.3517388679245283,
+      "timestamp": "2025-08-24 00:31:36"
+    },
+    {
+      "url": "https://www.blocket.se",
+      "metadata": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 980956,
+        "encoding": "utf-8",
+        "server": "",
+        "last_modified": ""
+      },
+      "ai_insights": {
+        "sentiment": {
+          "score": 0.0,
+          "confidence": 0.0,
+          "polarity": "neutral",
+          "positive_words": 0,
+          "negative_words": 0
+        },
+        "topics": [],
+        "entities": {
+          "personer": [],
+          "organisationer": [],
+          "platser": [],
+          "datum": [],
+          "email": [],
+          "urls": []
+        },
+        "language": "swedish",
+        "quality_score": 0.5209593798916315,
+        "spam_probability": 0.4,
+        "content_type": "application",
+        "readability": 0.44151487055990374,
+        "engagement_potential": 0.51,
+        "seo_score": 1.0,
+        "security_indicators": {
+          "https": 1,
+          "ssl_certificate": 1,
+          "secure_headers": 0,
+          "suspicious_scripts": 26,
+          "external_links": 38,
+          "form_security": 0
+        },
+        "accessibility_score": 1.0,
+        "performance_metrics": {
+          "image_count": 13,
+          "script_count": 28,
+          "css_count": 0,
+          "inline_styles": 29,
+          "external_resources": 36
+        }
+      },
+      "security_analysis": {
+        "https": 1,
+        "ssl_certificate": 1,
+        "secure_headers": 0,
+        "suspicious_scripts": 26,
+        "external_links": 38,
+        "form_security": 0
+      },
+      "performance_metrics": {
+        "response_time": 0.9397573471069336,
+        "data_size": 980956,
+        "compression_ratio": 1.0
+      },
+      "quality_score": 0.5209593798916315,
+      "timestamp": "2025-08-24 00:31:35"
+    }
+  ],
+  "features": [
+    "Avancerad AI-intelligens",
+    "Magnifik kvalitetsanalys",
+    "Säkerhetsanalys",
+    "SEO-optimering",
+    "Tillgänglighetsanalys",
+    "Prestandamått",
+    "Strukturerad data-extraktion",
+    "JSON och XML-parsning"
+  ]
+}

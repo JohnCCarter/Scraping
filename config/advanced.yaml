@@ -1,0 +1,323 @@
+# Avancerad konfiguration för Web Scraping Toolkit
+# Denna fil innehåller alla nya avancerade funktioner
+
+# Grundläggande scraper-konfiguration
+scraper:
+  # HTTP-klient
+  timeout: 30
+  max_retries: 3
+  retry_delay: 1.0
+  user_agent_rotation: true
+  
+  # JavaScript-rendering
+  use_playwright: true
+  playwright_timeout: 30
+  headless: true
+  
+  # Rate limiting
+  requests_per_second: 2
+  requests_per_minute: 60
+  delay_between_requests: 0.5
+
+# Avancerad robots.txt-parsing
+robots:
+  enabled: true
+  cache_timeout: 3600  # 1 timme
+  respect_crawl_delay: true
+  respect_request_rate: true
+  user_agent: "WebScrapingToolkit/1.0"
+
+# Proxy-rotation med health checks
+proxy:
+  enabled: true
+  rotation_strategy: "health_based"  # round_robin, random, health_based, least_used
+  health_check_interval: 300  # 5 minuter
+  health_check_timeout: 10
+  max_failures: 5
+  min_success_rate: 0.5
+  
+  # Proxy-lista (exempel)
+  proxy_list:
+    - url: "http://proxy1.example.com:8080"
+      username: "user1"
+      password: "pass1"
+      country: "SE"
+      provider: "provider1"
+    - url: "http://proxy2.example.com:8080"
+      username: "user2"
+      password: "pass2"
+      country: "US"
+      provider: "provider2"
+
+# Distribuerad scraping med Redis
+redis:
+  url: "redis://localhost:6379"
+  queue_name: "scraping_tasks"
+  result_queue: "scraping_results"
+
+distributed:
+  max_concurrent_tasks: 5
+  task_timeout: 300
+  heartbeat_interval: 30
+
+# Webhook-stöd för real-time notifieringar
+webhooks:
+  - url: "https://webhook.site/your-webhook-url"
+    events:
+      - "task_started"
+      - "task_completed"
+      - "task_failed"
+      - "rate_limit_hit"
+    headers:
+      Authorization: "Bearer your-token"
+    timeout: 30.0
+    retry_count: 3
+    retry_delay: 5.0
+    secret: "your-webhook-secret"
+
+# Dashboard-konfiguration
+dashboard:
+  host: "0.0.0.0"
+  port: 8080
+  debug: false
+  title: "Web Scraping Dashboard"
+  refresh_interval: 5000  # ms
+
+# Plugin-system
+plugins:
+  enabled: true
+  directories:
+    - "plugins"
+    - "src/plugins"
+    - "custom_plugins"
+  
+  # Plugin-specifik konfiguration
+  news_parser:
+    enabled: true
+    news_domains:
+      - "news.yahoo.com"
+      - "bbc.com"
+      - "cnn.com"
+      - "reuters.com"
+  
+  email_validator:
+    enabled: true
+    strict_mode: true
+  
+  jsonl_exporter:
+    enabled: true
+    compression: false
+
+# Caching-lager
+cache:
+  strategy: "hybrid"  # memory, disk, redis, hybrid
+  
+  memory:
+    max_size: 1000
+    default_ttl: 3600  # 1 timme
+    max_memory_mb: 100
+  
+  disk:
+    directory: "cache"
+    max_size_mb: 1000
+    default_ttl: 86400  # 24 timmar
+
+# Logging och monitoring
+logging:
+  level: "INFO"
+  format: "json"
+  output: "logs/scraping.log"
+  
+  # Strukturerad loggning
+  structured: true
+  include_timestamp: true
+  include_request_id: true
+
+# Data export
+export:
+  default_format: "json"
+  output_directory: "data"
+  include_timestamp: true
+  compression: false
+  
+  # Stödda format
+  formats:
+    - "json"
+    - "csv"
+    - "excel"
+    - "xml"
+    - "jsonl"
+
+# Validering
+validation:
+  enabled: true
+  strict_mode: false
+  
+  # Data-kvalitetsregler
+  rules:
+    min_text_length: 10
+    max_text_length: 10000
+    require_title: true
+    require_content: true
+
+# Machine learning (valfritt)
+ml:
+  enabled: false
+  
+  # Selektor-generering
+  selector_generation:
+    enabled: false
+    model_path: "models/selector_model.pkl"
+    confidence_threshold: 0.8
+  
+  # Innehållsklassificering
+  content_classification:
+    enabled: false
+    model_path: "models/classifier.pkl"
+
+# Säkerhet
+security:
+  # Input validation
+  validate_urls: true
+  max_url_length: 2048
+  allowed_schemes: ["http", "https"]
+  
+  # Rate limiting per domän
+  domain_rate_limits:
+    default: 60  # requests per minute
+    strict: 30   # för känsliga domäner
+  
+  # User-Agent rotation
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+
+# Prestanda-optimering
+performance:
+  # Connection pooling
+  connection_pool_size: 100
+  connection_timeout: 30
+  keep_alive: true
+  
+  # Concurrent requests
+  max_concurrent_requests: 10
+  semaphore_limit: 20
+  
+  # Memory management
+  max_memory_usage_mb: 512
+  garbage_collection_interval: 300
+
+# Felhantering
+error_handling:
+  # Retry-strategier
+  retry_on_network_error: true
+  retry_on_timeout: true
+  retry_on_http_error: [500, 502, 503, 504]
+  
+  # Exponential backoff
+  backoff_factor: 2.0
+  max_backoff: 60.0
+  
+  # Fel-logging
+  log_all_errors: true
+  log_retry_attempts: true
+
+# Monitoring och metrics
+metrics:
+  enabled: true
+  
+  # Prometheus metrics
+  prometheus:
+    enabled: true
+    port: 9090
+  
+  # Custom metrics
+  track_response_times: true
+  track_success_rates: true
+  track_data_volume: true
+  
+  # Alerting
+  alerts:
+    high_error_rate: 0.1  # 10%
+    slow_response_time: 10.0  # sekunder
+    low_success_rate: 0.8  # 80%
+
+# Databas-integration
+database:
+  enabled: false
+  type: "sqlite"  # sqlite, postgresql, mysql
+  
+  sqlite:
+    path: "data/scraping.db"
+  
+  postgresql:
+    host: "localhost"
+    port: 5432
+    database: "scraping"
+    username: "user"
+    password: "password"
+
+# API-integration
+api:
+  enabled: false
+  
+  # REST API
+  rest:
+    host: "0.0.0.0"
+    port: 8000
+    cors_enabled: true
+  
+  # GraphQL API
+  graphql:
+    enabled: false
+    endpoint: "/graphql"
+
+# Schemaläggning
+scheduling:
+  enabled: false
+  
+  # Cron-jobb
+  jobs:
+    - name: "daily_scraping"
+      schedule: "0 2 * * *"  # 02:00 varje dag
+      urls: ["https://example.com"]
+      enabled: true
+    
+    - name: "hourly_monitoring"
+      schedule: "0 * * * *"  # Varje timme
+      type: "health_check"
+      enabled: true
+
+# Backup och recovery
+backup:
+  enabled: false
+  
+  # Automatisk backup
+  schedule: "0 1 * * *"  # 01:00 varje dag
+  retention_days: 30
+  
+  # Backup-mål
+  targets:
+    - type: "local"
+      path: "backups/"
+    - type: "s3"
+      bucket: "scraping-backups"
+      region: "us-east-1"
+
+# Compliance och etik
+compliance:
+  # GDPR
+  gdpr:
+    enabled: true
+    data_retention_days: 90
+    anonymize_personal_data: true
+  
+  # Robots.txt
+  respect_robots_txt: true
+  
+  # Rate limiting
+  respect_rate_limits: true
+  
+  # Terms of Service
+  check_terms_of_service: true

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>📱 Mobile Dashboard - Responsive Design</title>
+    
+    <!-- Chart.js för charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- D3.js för visualiseringar -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Axios för API calls -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Font Awesome för ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Hammer.js för touch gestures -->
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+            touch-action: manipulation;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .header p {
+            font-size: 1em;
+            color: #666;
+        }
+        
+        .device-selector {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .device-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .device-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .device-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 80px;
+            justify-content: center;
+        }
+        
+        .device-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .device-btn.active {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+        }
+        
+        .mobile-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .mobile-stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 3px solid #667eea;
+            text-align: center;
+        }
+        
+        .mobile-stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .mobile-stat-title {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        
+        .mobile-stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .mobile-performance {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .performance-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        
+        .performance-item {
+            text-align: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .performance-value {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+        
+        .performance-label {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .touch-gestures {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .gesture-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .gesture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        
+        .gesture-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gesture-item:hover {
+            border-color: #667eea;
+            background: #e3f2fd;
+        }
+        
+        .gesture-icon {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+        
+        .gesture-name {
+            font-size: 11px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .chart-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .chart-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .mobile-insights {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .insight-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-left: 3px solid #4CAF50;
+            transition: all 0.3s ease;
+        }
+        
+        .insight-item:hover {
+            background: #e9ecef;
+            transform: translateX(3px);
+        }
+        
+        .insight-content {
+            color: #666;
+            font-size: 13px;
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.success { background: #4CAF50; }
+        .notification.error { background: #f44336; }
+        .notification.warning { background: #ff9800; }
+        .notification.info { background: #2196F3; }
+        
+        /* Mobile-first responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .mobile-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .mobile-stat-value {
+                font-size: 1.5em;
+            }
+            
+            .performance-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gesture-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .device-buttons {
+                justify-content: center;
+            }
+            
+            .device-btn {
+                min-width: 70px;
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mobile-stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .performance-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gesture-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.3em;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        .device-btn, .gesture-item {
+            min-height: 44px; /* Apple's recommended minimum touch target */
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-mobile-alt"></i> Mobile Dashboard</h1>
+            <p>Responsive design med touch-friendly interface</p>
+        </div>
+        
+        <!-- Device Selector -->
+        <div class="device-selector">
+            <div class="device-title">
+                <i class="fas fa-tablet-alt"></i>
+                Device Type
+            </div>
+            
+            <div class="device-buttons">
+                <button class="device-btn active" onclick="setDeviceType('phone')">
+                    <i class="fas fa-mobile-alt"></i> Phone
+                </button>
+                <button class="device-btn" onclick="setDeviceType('tablet')">
+                    <i class="fas fa-tablet-alt"></i> Tablet
+                </button>
+                <button class="device-btn" onclick="setDeviceType('desktop')">
+                    <i class="fas fa-desktop"></i> Desktop
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Statistics -->
+        <div class="mobile-stats-grid">
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    Device Type
+                </div>
+                <div class="mobile-stat-value" id="device-type">Phone</div>
+            </div>
+            
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-check-circle"></i>
+                    Mobile Friendly
+                </div>
+                <div class="mobile-stat-value" id="mobile-friendly">0</div>
+            </div>
+            
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    Responsive Sites
+                </div>
+                <div class="mobile-stat-value" id="responsive-sites">0</div>
+            </div>
+            
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-touch-pen"></i>
+                    Touch Gestures
+                </div>
+                <div class="mobile-stat-value" id="touch-gestures">0</div>
+            </div>
+            
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Performance
+                </div>
+                <div class="mobile-stat-value" id="performance-score">0%</div>
+            </div>
+            
+            <div class="mobile-stat-card">
+                <div class="mobile-stat-title">
+                    <i class="fas fa-universal-access"></i>
+                    Accessibility
+                </div>
+                <div class="mobile-stat-value" id="accessibility-score">0%</div>
+            </div>
+        </div>
+        
+        <!-- Mobile Performance -->
+        <div class="mobile-performance">
+            <div class="performance-title">
+                <i class="fas fa-chart-line"></i>
+                Mobile Performance
+            </div>
+            
+            <div class="performance-grid">
+                <div class="performance-item">
+                    <div class="performance-value" id="load-time">0.0s</div>
+                    <div class="performance-label">Load Time</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-value" id="touch-responsive">0%</div>
+                    <div class="performance-label">Touch Responsive</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-value" id="battery-opt">0%</div>
+                    <div class="performance-label">Battery Opt.</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-value" id="offline-cap">0%</div>
+                    <div class="performance-label">Offline Cap.</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Touch Gestures -->
+        <div class="touch-gestures">
+            <div class="gesture-title">
+                <i class="fas fa-hand-pointer"></i>
+                Touch Gestures
+            </div>
+            
+            <div class="gesture-grid">
+                <div class="gesture-item" onclick="simulateGesture('tap')">
+                    <div class="gesture-icon">👆</div>
+                    <div class="gesture-name">Tap</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('swipe_left')">
+                    <div class="gesture-icon">👈</div>
+                    <div class="gesture-name">Swipe Left</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('swipe_right')">
+                    <div class="gesture-icon">👉</div>
+                    <div class="gesture-name">Swipe Right</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('swipe_up')">
+                    <div class="gesture-icon">👆</div>
+                    <div class="gesture-name">Swipe Up</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('swipe_down')">
+                    <div class="gesture-icon">👇</div>
+                    <div class="gesture-name">Swipe Down</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('long_press')">
+                    <div class="gesture-icon">👊</div>
+                    <div class="gesture-name">Long Press</div>
+                </div>
+                <div class="gesture-item" onclick="simulateGesture('pinch')">
+                    <div class="gesture-icon">🤏</div>
+                    <div class="gesture-name">Pinch</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Insights -->
+        <div class="mobile-insights">
+            <div class="gesture-title">
+                <i class="fas fa-lightbulb"></i>
+                Mobile Insights
+            </div>
+            
+            <div id="mobile-insights-list">
+                <div class="insight-item">
+                    <div class="insight-content">Mobile-optimized scraping aktivt - analyserar responsive design</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Charts -->
+        <div class="chart-container">
+            <div class="chart-title">
+                <i class="fas fa-chart-area"></i>
+                Mobile Performance Over Time
+            </div>
+            <canvas id="mobilePerformanceChart" width="400" height="200"></canvas>
+        </div>
+        
+        <div class="chart-container">
+            <div class="chart-title">
+                <i class="fas fa-chart-pie"></i>
+                Device Type Distribution
+            </div>
+            <canvas id="deviceTypeChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+    
+    <script>
+        // Globala variabler
+        let charts = {};
+        let updateInterval;
+        let currentDeviceType = 'phone';
+        let gestureCount = 0;
+        
+        // Initiera dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMobileDashboard();
+        });
+        
+        function initializeMobileDashboard() {
+            // Initiera charts
+            initializeCharts();
+            
+            // Starta live updates
+            startLiveUpdates();
+            
+            // Ladda initial data
+            loadInitialData();
+            
+            // Initiera touch gestures
+            initializeTouchGestures();
+        }
+        
+        function initializeCharts() {
+            // Mobile Performance Chart
+            const mobilePerformanceCtx = document.getElementById('mobilePerformanceChart').getContext('2d');
+            charts.mobilePerformance = new Chart(mobilePerformanceCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Performance Score',
+                        data: [],
+                        borderColor: '#4CAF50',
+                        backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                        tension: 0.4
+                    }, {
+                        label: 'Accessibility Score',
+                        data: [],
+                        borderColor: '#2196F3',
+                        backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+            
+            // Device Type Chart
+            const deviceTypeCtx = document.getElementById('deviceTypeChart').getContext('2d');
+            charts.deviceType = new Chart(deviceTypeCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Phone', 'Tablet', 'Desktop'],
+                    datasets: [{
+                        data: [1, 0, 0],
+                        backgroundColor: [
+                            '#4CAF50',
+                            '#2196F3',
+                            '#FF9800'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        
+        function setDeviceType(deviceType) {
+            currentDeviceType = deviceType;
+            
+            // Uppdatera knappar
+            document.querySelectorAll('.device-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Uppdatera display
+            document.getElementById('device-type').textContent = deviceType.charAt(0).toUpperCase() + deviceType.slice(1);
+            
+            // Uppdatera chart
+            updateDeviceTypeChart(deviceType);
+            
+            showNotification(`Device type changed to ${deviceType}`, 'info');
+        }
+        
+        function simulateGesture(gestureType) {
+            gestureCount++;
+            document.getElementById('touch-gestures').textContent = gestureCount;
+            
+            showNotification(`Gesture: ${gestureType}`, 'success');
+            
+            // Animerad feedback
+            event.target.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                event.target.style.transform = 'scale(1)';
+            }, 150);
+        }
+        
+        function initializeTouchGestures() {
+            // Hammer.js för touch gestures
+            const container = document.querySelector('.container');
+            const hammer = new Hammer(container);
+            
+            hammer.on('swipeleft', function() {
+                simulateGesture('swipe_left');
+            });
+            
+            hammer.on('swiperight', function() {
+                simulateGesture('swipe_right');
+            });
+            
+            hammer.on('swipeup', function() {
+                simulateGesture('swipe_up');
+            });
+            
+            hammer.on('swipedown', function() {
+                simulateGesture('swipe_down');
+            });
+        }
+        
+        function updateDeviceTypeChart(deviceType) {
+            const data = [0, 0, 0];
+            
+            switch(deviceType) {
+                case 'phone':
+                    data[0] = 1;
+                    break;
+                case 'tablet':
+                    data[1] = 1;
+                    break;
+                case 'desktop':
+                    data[2] = 1;
+                    break;
+            }
+            
+            charts.deviceType.data.datasets[0].data = data;
+            charts.deviceType.update();
+        }
+        
+        function loadInitialData() {
+            // Simulera mobile data
+            updateMobileMetrics({
+                device_type: 'phone',
+                mobile_friendly_sites: 15,
+                responsive_sites: 12,
+                performance_avg: 0.8,
+                accessibility_avg: 75.5,
+                touch_gestures_count: 8,
+                battery_optimization: 85.0,
+                offline_capability: 60.0
+            });
+        }
+        
+        function updateMobileMetrics(data) {
+            // Uppdatera statistik
+            document.getElementById('mobile-friendly').textContent = data.mobile_friendly_sites;
+            document.getElementById('responsive-sites').textContent = data.responsive_sites;
+            document.getElementById('touch-gestures').textContent = data.touch_gestures_count;
+            document.getElementById('performance-score').textContent = Math.round(data.performance_avg * 100) + '%';
+            document.getElementById('accessibility-score').textContent = Math.round(data.accessibility_avg) + '%';
+            
+            // Uppdatera performance metrics
+            document.getElementById('load-time').textContent = data.performance_avg + 's';
+            document.getElementById('touch-responsive').textContent = Math.round(data.accessibility_avg) + '%';
+            document.getElementById('battery-opt').textContent = Math.round(data.battery_optimization) + '%';
+            document.getElementById('offline-cap').textContent = Math.round(data.offline_capability) + '%';
+            
+            // Uppdatera insights
+            updateMobileInsights(data);
+            
+            // Uppdatera charts
+            updateCharts(data);
+        }
+        
+        function updateMobileInsights(data) {
+            const insights = [
+                `Mobile-friendly sites: ${data.mobile_friendly_sites}`,
+                `Responsive design sites: ${data.responsive_sites}`,
+                `Performance score: ${Math.round(data.performance_avg * 100)}%`,
+                `Accessibility score: ${Math.round(data.accessibility_avg)}%`,
+                `Touch gestures detected: ${data.touch_gestures_count}`,
+                `Device type: ${currentDeviceType}`
+            ];
+            
+            const container = document.getElementById('mobile-insights-list');
+            container.innerHTML = insights.map(insight => `
+                <div class="insight-item">
+                    <div class="insight-content">${insight}</div>
+                </div>
+            `).join('');
+        }
+        
+        function updateCharts(data) {
+            // Uppdatera Mobile Performance Chart
+            const now = new Date();
+            const timeLabel = now.toLocaleTimeString();
+            
+            charts.mobilePerformance.data.labels.push(timeLabel);
+            charts.mobilePerformance.data.datasets[0].data.push(Math.round(data.performance_avg * 100));
+            charts.mobilePerformance.data.datasets[1].data.push(Math.round(data.accessibility_avg));
+            
+            if (charts.mobilePerformance.data.labels.length > 15) {
+                charts.mobilePerformance.data.labels.shift();
+                charts.mobilePerformance.data.datasets[0].data.shift();
+                charts.mobilePerformance.data.datasets[1].data.shift();
+            }
+            
+            charts.mobilePerformance.update();
+        }
+        
+        function startLiveUpdates() {
+            updateInterval = setInterval(() => {
+                // Simulera live mobile updates
+                const mockData = {
+                    device_type: currentDeviceType,
+                    mobile_friendly_sites: 15 + Math.floor(Math.random() * 3),
+                    responsive_sites: 12 + Math.floor(Math.random() * 2),
+                    performance_avg: 0.8 + Math.random() * 0.2,
+                    accessibility_avg: 75.5 + Math.random() * 10,
+                    touch_gestures_count: gestureCount,
+                    battery_optimization: 85.0 + Math.random() * 10,
+                    offline_capability: 60.0 + Math.random() * 20
+                };
+                
+                updateMobileMetrics(mockData);
+            }, 3000);
+        }
+        
+        function showNotification(message, type) {
+            const container = document.getElementById('notification-container');
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            container.appendChild(notification);
+            
+            // Visa notification
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            // Ta bort notification efter 3 sekunder
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => container.removeChild(notification), 300);
+            }, 3000);
+        }
+        
+        // Cleanup vid page unload
+        window.addEventListener('beforeunload', () => {
+            if (updateInterval) {
+                clearInterval(updateInterval);
+            }
+        });
+    </script>
+</body>
+</html>
